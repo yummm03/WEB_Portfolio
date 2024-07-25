@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .grid-container {
+      width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 40px 100px 100px;
+      grid-template-areas: 
+      "airplane title title title"
+      "space normal-title sale-title special-title"
+      "space noraml-price sale-price special-price";
+      border: solid #666;
+      border-width: 1px 0 0 0;
+
+    }
+
+    @media screen and (max-width: 1000px) {
+      .grid-container {
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 40px 100px 100px;
+        grid-template-areas: 
+        "airplane title title"
+        "normal-title sale-title special-title"
+        "noraml-price sale-price special-price";
+      }
+      
+    }
+
+    .grid-container > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: solid black;
+      border-width: 0 1px 1px 0;
+
+
+    }
+
+    .title {
+      background-color: pink;
+    }
+
+    .ariplane {
+      grid-area: airplane;
+    }
+
+    .title {
+      grid-area: title;
+    }
+
+    .normal-title{
+      grid-area: normal-title;
+    }
+    .sale-title{
+      grid-area: sale-title;
+    }
+    .special-title{
+      grid-area: special-title;
+    }
+    .noraml-price{
+      grid-area: noraml-price;
+    }
+    .sale-price{
+      grid-area: sale-price;
+    }
+    .special-price{
+      grid-area: special-price;
+    }
+
+    .space {
+      grid-area: space;
+    }
+    
+
+    .airplane {
+      flex-direction: column;;
+    }
+    .airplane-title {
+     font-weight: bold;
+    }
+    .airplane > span {
+      font-size: 12px;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="airplane">
+      <div class="airplane-title">LS205</div>
+      <span>은하철도999</span>
+    </div>
+    <div class="title">
+
+    </div>
+    <div class="normal-title">정상운임</div>
+    <div class="sale-title">할인운임</div>
+    <div class="special-title">특가운임</div>
+    <div class="noraml-price">99,999</div>
+    <div class="sale-price">77,777</div>
+    <div class="special-price">55,555</div>
+    <div class="space"></div>
+  </div>
+</body>
+</html>
