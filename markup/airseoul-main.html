@@ -6,163 +6,233 @@
     <title>Document</title>
     <link rel="stylesheet" href="../reset.css">
     <style>
+        *{
+            font-family: 'Pretendard';
+            src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+        
         a {
             text-decoration: none;
             color: #222;
         }
+        .bg-img {
+            position: relative;
+            height: 100vh;
+            background-image: url(../assets/img/메인배경.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .main-container {
+            width: 1280px;
+            margin: 0 auto;
+        }
+
+        .header-upbox {
+            display: flex;
+            align-items: center;
+
+            font-family: 'pretendard';
+            font-size: 12px;
+            gap: 8px;
+        }
+
+        .login-button {
+            display: flex;
+            align-items: center;
+
+            color: #fff;
+        }
+
+        .login-box {
+            width: 110px;
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .login-box > .box {
+            width: 1px;
+            height: 20px;
+            background-color: #fff;
+        }
+
+        .lang-button {
+            width: 110px;
+
+            color: #fff;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-nav {
+            display: flex;
+
+            font-family: 'pretendard';
+            font-size: 18px;
+        }
     </style>
 </head> 
 <body>
-
-    <!-- 헤더 -->
-    <header>
-        <div class="header-container">
-            <div class="header-upbox">
-                <div class="login-box">
-                    <a href="#" class="login-button">로그인</a>
+    <div class="bg-img">
+        <div class="main-container">
+            <!-- 헤더 -->
+            <header>
+                <div class="header-container">
+                    <div class="header-upbox">
+                        <div class="login-box">
+                            <a href="#" class="login-button">로그인</a>
+                            <div class="box"></div>
+                        </div>
+                        <div class="lang-box">
+                            <a href="#" class="lang-button">
+                                한국어
+                                <img src="../assets/icon/아래화살표_흰색.svg" alt="">
+                            </a> 
+                        </div>
+                    </div>
+                    <div class="header-downbox">
+                        <a href="" class="logo">
+                            <img src="../assets/img/로고_흰.png" alt="">
+                        </a>
+                        <ul class="header-nav">
+                            <li>예약</li>
+                            <li>나의예약</li>
+                            <li>서비스안내</li>
+                            <li>제휴</li>
+                            <li>이벤트</li>
+                            <li>민트몰</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="lang-box">
-                    <a href="#" class="login-button">
-                        한국어
-                        <img src="#" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="header-downbox">
-                <a href="#" class="logo"></a>
-                <ul>
+            </header>
+            
+            <!-- 메인 예약 박스 -->
+            <section id="reservation-container">
+                <ul class="reservation-nav">
                     <li>예약</li>
-                    <li>나의예약</li>
-                    <li>서비스안내</li>
-                    <li>제휴</li>
-                    <li>이벤트</li>
-                    <li>민트몰</li>
+                    <li>체크인</li>
+                    <li>예약조회</li>
+                    <li>출/도착조회</li>
                 </ul>
-            </div>
-        </div>
-    </header>
-
-    <!-- 메인 예약 박스 -->
-    <section id="reservation-container">
-        <ul class="reservation-nav">
-            <li>예약</li>
-            <li>체크인</li>
-            <li>예약조회</li>
-            <li>출/도착조회</li>
-        </ul>
-        <div class="reservation-box">
-            <div class="reservation-box-left">
-                <img src="#" alt="비행기아이콘">
-                <ul class="left-select">
-                    <li>왕복</li>
-                    <li>편도</li>
-                </ul>
-            </div>
-            <div class="reservation-box-middle">
-                <div class="middle-country">
-                    <a href="#" class="middle-country-goback">
-                        <h2>ICN</h2>
-                        <div class="middle-country-name">
-                            <p>서울</p>
-                            <p>/</p>
-                            <p>인천</p>
+                <div class="reservation-box">
+                    <div class="reservation-box-left">
+                        <img src="../assets/icon/비행기.svg" alt="비행기아이콘">
+                        <ul class="left-select">
+                            <li>왕복</li>
+                            <li>편도</li>
+                        </ul>
+                    </div>
+                    <div class="reservation-box-middle">
+                        <div class="middle-country">
+                            <a href="#" class="middle-country-goback">
+                                <h2>ICN</h2> 
+                                <div class="middle-country-name">
+                                    <p>서울</p>
+                                    <p>/</p>
+                                    <p>인천</p>
+                                </div>
+                            </a>
+                            <img src="../assets/icon/교체화살표_대.svg" alt="변환아이콘">
+                            <a href="#" class="middle-country-goback">
+                                <h2>NRT</h2>
+                                <div class="middle-country-name">
+                                    <p>도쿄</p>
+                                    <p>/</p>
+                                    <p>나리타</p>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                    <img src="#" alt="변환아이콘">
-                    <a href="#" class="middle-country-goback">
-                        <h2>NRT</h2>
-                        <div class="middle-country-name">
-                            <p>도쿄</p>
-                            <p>/</p>
-                            <p>나리타</p>
+                        <hr>
+                        <div class="middle-date">
+                            <a href="#" class="middle-date-goback">
+                                <img src="../assets/icon/비행기_이륙.svg" alt="출국아이콘">
+                                <p>출국</p>
+                                <p>2024년 01월 01일 (월)</p>
+                            </div>
+                            <a href="#" class="middle-date-goback">
+                                <img src="../assets/icon/비행기_착륙.svg" alt="입국아이콘">
+                                <p>입국</p>
+                                <p>2024년 01월 05일 (금)</p>
+                            </div>
                         </div>
-                    </a>
-                </div>
-                <hr>
-                <div class="middle-date">
-                    <a href="#" class="middle-date-goback">
-                        <img src="#" alt="출국아이콘">
-                        <p>출국</p>
-                        <p>2024년 01월 01일 (월)</p>
+                        <img src="../assets/img/바코드.png" alt="바코드">
                     </div>
-                    <a href="#" class="middle-date-goback">
-                        <img src="#" alt="입국아이콘">
-                        <p>입국</p>
-                        <p>2024년 01월 05일 (금)</p>
+                    <div class="reservation-box-right">
+                        <div class="passenger-container">
+                            <div class="passenger">
+                                <img src="../assets/icon/사람.svg" alt="사람아이콘">
+                                <p>탑승객</p>
+                            </div>
+                            <a href="#" class="passenger-number">
+                                <p>성인 1명</p>
+                                <p>소아 0명</p>
+                                <p>유아 0명</p>
+                            </a>
+                        </div>
+                        <button class="check">조회</button>
                     </div>
                 </div>
-                <img src="#" alt="바코드">
-            </div>
-            <div class="reservation-box-right">
-                <div class="passenger-container">
-                    <div class="passenger">
-                        <img src="#" alt="사람아이콘">
-                        <p>탑승객</p>
+                <div class="reservation-spacial-price">
+                    <div class="spacial-price-container">
+                        <div class="spacial-price-title">
+                            <p>에어서울만의 특가</p>
+                            <p>오늘 단 하루!!</p>
+                        </div>
+                        <div class="spacial-price-box-right">
+                            <div class="spacial-price-goback">
+                                <p>서울/인천(ICN)</p>
+                                <img src="../assets/icon/오른쪽화살표_긴_검.svg" alt="화살표">
+                                <p>도쿄/나리타(NRT)</p>
+                            </div>
+                            <div class="spacial-price-price">
+                                <p>KRW</p>
+                                <p>49,900</p>
+                                <p>~</p>
+                            </div>
+                        </div>
+                        <div class="spacial-price-list">
+                            <span class="list-dot"></span>
+                            <span class="list-dot"></span>
+                            <span class="list-dot"></span>
+                        </div>
                     </div>
-                    <a href="#" class="passenger-number">
-                        <p>성인 1명</p>
-                        <p>소아 0명</p>
-                        <p>유아 0명</p>
-                    </a>
                 </div>
-                <button class="check">조회</button>
-            </div>
+            </section>
         </div>
-        <div class="reservation-spacial-price">
-            <div class="spacial-price-container">
-                <div class="spacial-price-title">
-                    <p>에어서울만의 특가</p>
-                    <p>오늘 단 하루!!</p>
-                </div>
-                <div class="spacial-price-box-right">
-                    <div class="spacial-price-goback">
-                        <p>서울/인천(ICN)</p>
-                        <img src="#" alt="화살표">
-                        <p>도쿄/나리타(NRT)</p>
-                    </div>
-                    <div class="spacial-price-price">
-                        <p>KRW</p>
-                        <p>49,900</p>
-                        <p>~</p>
-                    </div>
-                </div>
-                <div class="spacial-price-list">
-                    <span class="list-dot"></span>
-                    <span class="list-dot"></span>
-                    <span class="list-dot"></span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
+    </div>
+    
     <!-- 부가서비스 -->
     <section id="service-container">
         <div class="service-box">
             <h3>부가서비스</h3>
             <ul>
                 <li>
-                    <img src="#" alt="">
+                    <img src="../assets/img/사전좌석구매.png" alt="">
                     <p>사전좌석</p>
                 </li>
                 <li>
-                    <img src="#" alt="">
+                    <img src="../assets/img/사전수화물구매.png" alt="">
                     <p>사전좌석</p>
                 </li>
                 <li>
-                    <img src="#" alt="">
+                    <img src="../assets/img/기내식주문.png" alt="">
                     <p>사전좌석</p>
                 </li>
                 <li>
-                    <img src="#" alt="">
+                    <img src="../assets/img/기내면세품.png" alt="">
                     <p>사전좌석</p>
                 </li>
                 <li>
-                    <img src="#" alt="">
+                    <img src="../assets/img/카페민트.png" alt="">
                     <p>사전좌석</p>
                 </li>
                 <li>
-                    <img src="#" alt="">
+                    <img src="../assets/img/여행자보험.png" alt="">
                     <p>사전좌석</p>
                 </li>
             </ul>
@@ -182,21 +252,21 @@
             </div>
             <ul>
                 <li>
-                    <img src="#" alt="">
+                    <img src="../assets/img/민트패스1.png" alt="">
                     <div class="mint-text">
                         <p>[J/S] 일본/동남아 초특가 항공 패스권</p>
                         <p>2000개 한정수량으로 쓱 라이브반송 단독판매!</p>
                     </div>
                 </li>
                 <li>
-                    <img src="#" alt="">
+                    <img src="../assets/img/민트패스2.png" alt="">
                     <div class="mint-text">
                         <p>[J/S] 일본/동남아 초특가 항공 패스권</p>
                         <p>2000개 한정수량으로 쓱 라이브반송 단독판매!</p>
                     </div>
                 </li>
                 <li>
-                    <img src="#" alt="">
+                    <img src="../assets/img/민트패스3.png" alt="">
                     <div class="mint-text">
                         <p>[J/S] 일본/동남아 초특가 항공 패스권</p>
                         <p>2000개 한정수량으로 쓱 라이브반송 단독판매!</p>
@@ -212,7 +282,7 @@
             <div class="notice-container">
                 <div class="notice-title">
                     <p>공지사항</p>
-                    <img src="#" alt="">
+                    <img src="../assets/icon/오른쪽화살표_회.svg" alt="">
                 </div>
                 <ul>
                     <li>
@@ -237,11 +307,11 @@
             </div>
             <div class="sns-container">
                 <div class="facebook">
-                    <img src="#" alt="">
+                    <img src="../assets/icon/페이스북.svg" alt="">
                     <p>Facebook</p>
                 </div>
                 <div class="instagram">
-                    <img src="#" alt="">
+                    <img src="../assets/icon/인스타그램.svg" alt="">
                     <p>Instagram</p>
                 </div>
             </div>
@@ -257,11 +327,11 @@
                     <div class="customer-btn">
                         <button>
                             자주 묻는 질문
-                            <img src="#" alt="">
+                            <img src="../assets/icon/오른쪽화살표_흰.svg" alt="">
                         </button>
                         <button>
                             1 : 1 문의
-                            <img src="#" alt="">
+                            <img src="../assets/icon/오른쪽화살표_흰.svg" alt="">
                         </button>
                     </div>
                 </div>
@@ -321,7 +391,7 @@
         </ul>
         <div class="group-shortcut">
             <p>그룹사 바로가기</p>
-            <img src="#" alt="">
+            <img src="../assets/icon/아래화살표_회.svg" alt="">
         </div>
     </section>
 
@@ -329,13 +399,13 @@
     <footer>
         <div class="footer-container">
             <ul>
-                <li><img src="#" alt=""></li>
-                <li><img src="#" alt=""></li>
-                <li><img src="#" alt=""></li>
-                <li><img src="#" alt=""></li>
+                <li><img src="../assets/img/푸터1.png" alt=""></li>
+                <li><img src="../assets/img/푸터2.png" alt=""></li>
+                <li><img src="../assets/img/푸터3.png" alt=""></li>
+                <li><img src="../assets/img/푸터4.png" alt=""></li>
             </ul>
             <div class="footer-content">
-                <img src="#" alt="">
+                <img src="../assets/img/로고_회.png" alt="">
                 <ul>
                     <li>에어서울 주식회사 대표이사 선완성</li>
                     <li>에어서울 주식회사 대표이사 선완성</li>
