@@ -4,78 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../reset.css">
-    <style>
-        *{
-            font-family: 'Pretendard';
-            src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-            font-weight: 400;
-            font-style: normal;
-        }
-        
-        a {
-            text-decoration: none;
-            color: #222;
-        }
-        .bg-img {
-            position: relative;
-            height: 100vh;
-            background-image: url(../assets/img/메인배경.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        
-        .main-container {
-            width: 1280px;
-            margin: 0 auto;
-        }
-
-        .header-upbox {
-            display: flex;
-            align-items: center;
-
-            font-family: 'pretendard';
-            font-size: 12px;
-            gap: 8px;
-        }
-
-        .login-button {
-            display: flex;
-            align-items: center;
-
-            color: #fff;
-        }
-
-        .login-box {
-            width: 110px;
-
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .login-box > .box {
-            width: 1px;
-            height: 20px;
-            background-color: #fff;
-        }
-
-        .lang-button {
-            width: 110px;
-
-            color: #fff;
-
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .header-nav {
-            display: flex;
-
-            font-family: 'pretendard';
-            font-size: 18px;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head> 
 <body>
     <div class="bg-img">
@@ -100,12 +30,12 @@
                             <img src="../assets/img/로고_흰.png" alt="">
                         </a>
                         <ul class="header-nav">
-                            <li>예약</li>
-                            <li>나의예약</li>
-                            <li>서비스안내</li>
-                            <li>제휴</li>
-                            <li>이벤트</li>
-                            <li>민트몰</li>
+                            <li><a href="">예약</a></li>
+                            <li><a href="">나의예약</a></li>
+                            <li><a href="">서비스안내</a></li>
+                            <li><a href="">제휴</a></li>
+                            <li><a href="">이벤트</a></li>
+                            <li><a href="">민트몰</a></li>
                         </ul>
                     </div>
                 </div>
@@ -114,51 +44,56 @@
             <!-- 메인 예약 박스 -->
             <section id="reservation-container">
                 <ul class="reservation-nav">
-                    <li>예약</li>
-                    <li>체크인</li>
-                    <li>예약조회</li>
-                    <li>출/도착조회</li>
+                    <li class="res-button">예약</li>
+                    <li class="res-button">체크인</li>
+                    <li class="res-button">예약조회</li>
+                    <li class="res-button">출/도착조회</li>
                 </ul>
+
                 <div class="reservation-box">
                     <div class="reservation-box-left">
-                        <img src="../assets/icon/비행기.svg" alt="비행기아이콘">
-                        <ul class="left-select">
-                            <li>왕복</li>
-                            <li>편도</li>
-                        </ul>
+                        <img class="airplane_icon" src="../assets/icon/비행기.svg" alt="비행기아이콘">
+                        <div class="way-select">
+                            <a class="round-trip" href="">왕복</a>
+                            <a class="one-way" href="">편도</a>
+                        </div>
                     </div>
                     <div class="reservation-box-middle">
                         <div class="middle-country">
                             <a href="#" class="middle-country-goback">
                                 <h2>ICN</h2> 
                                 <div class="middle-country-name">
-                                    <p>서울</p>
-                                    <p>/</p>
-                                    <p>인천</p>
+                                    <a href="">
+                                        <p>서울/인천</p>
+                                    </a>
                                 </div>
                             </a>
                             <img src="../assets/icon/교체화살표_대.svg" alt="변환아이콘">
                             <a href="#" class="middle-country-goback">
                                 <h2>NRT</h2>
                                 <div class="middle-country-name">
-                                    <p>도쿄</p>
-                                    <p>/</p>
-                                    <p>나리타</p>
+                                    <a href="">
+                                        <p>도쿄/나리타</p>
+                                    </a> 
                                 </div>
                             </a>
                         </div>
                         <hr>
                         <div class="middle-date">
                             <a href="#" class="middle-date-goback">
-                                <img src="../assets/icon/비행기_이륙.svg" alt="출국아이콘">
-                                <p>출국</p>
-                                <p>2024년 01월 01일 (월)</p>
-                            </div>
+                                <div class="middle-icon-gap">
+                                    <img src="../assets/icon/비행기_이륙.svg" alt="출국아이콘">
+                                    <p>출국</p>
+                                    <p>2024년 01월 01일 (월)</p>
+                                </div>
+                            </a>
                             <a href="#" class="middle-date-goback">
-                                <img src="../assets/icon/비행기_착륙.svg" alt="입국아이콘">
-                                <p>입국</p>
-                                <p>2024년 01월 05일 (금)</p>
-                            </div>
+                                <div class="middle-date-gap">
+                                    <img src="../assets/icon/비행기_착륙.svg" alt="입국아이콘">
+                                    <p>입국</p>
+                                    <p>2024년 01월 05일 (금)</p>
+                                </div>
+                            </a>
                         </div>
                         <img src="../assets/img/바코드.png" alt="바코드">
                     </div>

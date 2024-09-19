@@ -1,0 +1,155 @@
+*{
+    font-family: 'Pretendard';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+.bg-img {
+    position: relative;
+    height: 100vh;
+    background-image: url(../assets/img/메인배경.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/* 헤더 */
+.header-container{
+    padding: 20px 0;
+}
+
+.header-upbox {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    font-size: 12px;
+    gap: 8px;
+}
+
+.login-box {
+    display: flex;
+    justify-content: space-between;
+
+    width: 110px;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+
+    color: #fff;
+}
+
+.login-box > .box {
+    width: 1px;
+    height: 20px;
+    background-color: #fff;
+}
+
+.lang-button {
+    width: 110px;
+
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-downbox {
+    display: flex;
+    margin-top: 35px;
+}
+
+.header-nav {
+    position: absolute;
+    display: flex;
+
+    font-size: 18px;
+    color: #fff;
+
+    gap: 64px;
+    transform: translateX(300px);
+}
+
+/* 메인예약박스 */
+.reservation-nav {
+    display: flex;
+}
+
+.res-button {
+    width: 25%;
+    height: 41px;
+
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background-color: #24C6A9;
+}
+
+.res-button:first-child {
+    color: #222;
+    background-color: #fff;
+
+    border-radius: 10px 10px 0 0 ;
+}
+
+.res-button:nth-child(2) {
+    border-radius: 10px 0 0 0;
+}
+
+.res-button:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+.reservation-box {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff85;
+}
+
+.way-select {
+
+}
+
+.round-trip {
+    color: #EE378A;
+}
+
+.one-way {
+    color: #777;
+}
+
+.middle-country {
+    display: flex;
+    justify-content: space-around;
+}
+
+.middle-country-goback {
+    
+}
+
+.middle-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle-date-goback {
+    display: flex;
+}
+
+.middle-icon-gap {
+    gap: ;
+}
+/* 지금 나란히 정렬된거 수직정렬하는 방법 찾아야댐 */
