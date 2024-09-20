@@ -23,6 +23,11 @@ a {
     margin: 0 auto;
 }
 
+button{
+    border: 0;
+    background-color: transparent;
+  }
+
 /* 헤더 */
 .header-container{
     padding: 20px 0;
@@ -83,7 +88,13 @@ a {
     transform: translateX(300px);
 }
 
+
 /* 메인예약박스 */
+#reservation-container {
+    margin-top: 167px;
+}
+
+/* 상단메뉴바 */
 .reservation-nav {
     display: flex;
 }
@@ -113,14 +124,24 @@ a {
     border-radius: 0 10px 0 0;
 }
 
+
+/* 예약박스내부 */
 .reservation-box {
     display: flex;
     justify-content: space-between;
-    background-color: #ffffff85;
+
+    background-color: #ffffff;
+    opacity: 85%;
+    padding: 32px;
+}
+
+/* 예약박스왼쪽 */
+.airplane_icon {
+    width: 40px;
 }
 
 .way-select {
-
+    display: flex;
 }
 
 .round-trip {
@@ -131,13 +152,24 @@ a {
     color: #777;
 }
 
+
+/* 예약박스중간 */
+
+.reservation-box-middle > hr {
+    margin-top: 12px;
+}
+
 .middle-country {
     display: flex;
     justify-content: space-around;
 }
 
-.middle-country-goback {
-    
+.middle-country-goback > h2 {
+    font-size: 48px;
+}
+
+.middle-country-name {
+    font-size: 18px;
 }
 
 .middle-date {
@@ -147,9 +179,60 @@ a {
 
 .middle-date-goback {
     display: flex;
+    gap: 16px;
+    font-size: 16px;
+
+    margin-top: 12px;
 }
 
-.middle-icon-gap {
-    gap: ;
+.middle-date-gap {
+    display: flex;
+    gap: 8px;
 }
+
+.middle-date-gap > p {
+    color: #777;
+}
+
+
+/* 예약박스오른쪽 */
+/* .reservation-box-right {
+    
+} */
+
+.passenger-container {
+    display: flex;
+    gap: 32px;
+    font-size: 16px;
+}
+
+.passenger {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.passenger-number {
+    display: flex;
+    align-items: center;
+}
+
+.check-button {
+    width: 189px;
+    height: 36px;
+    border-radius: 20px;
+
+    background-color: #24c6a9;
+    color: #fff;
+}
+
+
+/* 특가 */
+.spacial-price-container {
+    background-color: #fff;
+}
+
+
+
+
 /* 지금 나란히 정렬된거 수직정렬하는 방법 찾아야댐 */
