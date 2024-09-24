@@ -28,7 +28,11 @@ button{
     background-color: transparent;
   }
 
+
+
+
 /* 헤더 */
+
 .header-container{
     padding: 20px 0;
 }
@@ -103,7 +107,10 @@ button{
     width: 25%;
     height: 41px;
 
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     font-size: 16px;
     color: #fff;
     background-color: #24C6A9;
@@ -136,14 +143,22 @@ button{
 }
 
 /* 예약박스왼쪽 */
+.reservation-box-left {
+    gap: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
 .airplane_icon {
     width: 40px;
 }
 
 .way-select {
     display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
-
+ 
 .round-trip {
     color: #EE378A;
 }
@@ -157,11 +172,21 @@ button{
 
 .reservation-box-middle > hr {
     margin-top: 12px;
+    background-color: #777;
 }
 
 .middle-country {
     display: flex;
     justify-content: space-around;
+    margin: 0 40px;
+}
+
+.middle-country-goback {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    gap: 4px;
 }
 
 .middle-country-goback > h2 {
@@ -179,14 +204,17 @@ button{
 
 .middle-date-goback {
     display: flex;
+    align-items: center;
+
     gap: 16px;
     font-size: 16px;
 
-    margin-top: 12px;
+    margin-top: 4px;
 }
 
 .middle-date-gap {
     display: flex;
+    align-items: center;
     gap: 8px;
 }
 
@@ -196,9 +224,12 @@ button{
 
 
 /* 예약박스오른쪽 */
-/* .reservation-box-right {
-    
-} */
+.reservation-box-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
 
 .passenger-container {
     display: flex;
@@ -210,11 +241,14 @@ button{
     display: flex;
     align-items: center;
     gap: 4px;
+
+    color: #777;
 }
 
 .passenger-number {
     display: flex;
     align-items: center;
+    gap: 12px;
 }
 
 .check-button {
@@ -228,11 +262,111 @@ button{
 
 
 /* 특가 */
-.spacial-price-container {
+.reservation-spacial-price {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+    
     background-color: #fff;
+    padding: 16px;
+
+    border-radius: 0 0 10px 10px;
+}
+
+.spacial-price-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 126px;
+}
+
+.spacial-price-title {
+    display: flex;
+    align-items: end;
+
+    gap: 8px;
+}
+
+.spacial-price-title > p:first-child {
+    font-size: 16px;
+}
+
+.spacial-price-title > p:last-child {
+    font-size: 24px;
+    color: #EE378A;
+}
+
+.spacial-price-goback {
+    display: flex;
+}
+
+.spacial-price-goback > p {
+    font-size: 12px;
+}
+
+.spacial-price-price {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    gap: 4px;
+    margin-top: 4px;
+}
+
+.spacial-price-price > p:first-child {
+    font-size: 14px;
+}
+
+.spacial-price-price > p:nth-child(2) {
+    font-size: 20px;
+    color: #EE378A;
+}
+
+.spacial-price-price > p:last-child {
+    font-size: 18px;
+}
+
+.spacial-price-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.list-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #c6c6c6;
+}
+
+.list-dot:first-child {
+    background-color: #24C6A9;
 }
 
 
 
 
-/* 지금 나란히 정렬된거 수직정렬하는 방법 찾아야댐 */
+/* 부가서비스 */
+
+#service-container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.service-box-container {
+    display: flex;
+    /* gap: 43px; */
+    justify-content: space-between;
+}
+
+.service-box-content {
+    text-align: center;
+}
+
+.service-box-content > p {
+    font-size: 16px;
+    margin-top: 34px;
+}
+

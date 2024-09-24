@@ -43,12 +43,12 @@
             
             <!-- 메인 예약 박스 -->
             <section id="reservation-container">
-                <ul class="reservation-nav">
-                    <li class="res-button">예약</li>
-                    <li class="res-button">체크인</li>
-                    <li class="res-button">예약조회</li>
-                    <li class="res-button">출/도착조회</li>
-                </ul>
+                <div class="reservation-nav">
+                    <div class="res-button">예약</div>
+                    <div class="res-button">체크인</div>
+                    <div class="res-button">예약조회</div>
+                    <div class="res-button">출/도착조회</div>
+                </div>
 
                 <div class="reservation-box">
                     <div class="reservation-box-left">
@@ -60,21 +60,21 @@
                     </div>
                     <div class="reservation-box-middle">
                         <div class="middle-country">
-                            <a href="#" class="middle-country-goback">
-                                <h2>ICN</h2> 
-                                <div class="middle-country-name">
-                                    <a href="#">
-                                        <p>서울/인천</p>
-                                    </a>
+                            <a href="#">
+                                <div class="middle-country-goback">
+                                    <h2>ICN</h2>
+                                    <div class="middle-country-name">
+                                        서울/인천
+                                    </div>
                                 </div>
                             </a>
                             <img src="../assets/icon/교체화살표_대.svg" alt="변환아이콘">
-                            <a href="#" class="middle-country-goback">
-                                <h2>NRT</h2>
-                                <div class="middle-country-name">
-                                    <a href="#">
-                                        <p>도쿄/나리타</p>
-                                    </a> 
+                            <a href="#">
+                                <div class="middle-country-goback">
+                                    <h2>NRT</h2>
+                                    <div class="middle-country-name">
+                                        도쿄/나리타
+                                    </div>
                                 </div>
                             </a>
                         </div>
@@ -130,11 +130,11 @@
                                 <p>~</p>
                             </div>
                         </div>
-                        <div class="spacial-price-list">
-                            <span class="list-dot"></span>
-                            <span class="list-dot"></span>
-                            <span class="list-dot"></span>
-                        </div>
+                    </div>
+                    <div class="spacial-price-list">
+                        <div class="list-dot"></div>
+                        <div class="list-dot"></div>
+                        <div class="list-dot"></div>
                     </div>
                 </div>
             </section>
@@ -145,30 +145,30 @@
     <section id="service-container">
         <div class="service-box">
             <h3>부가서비스</h3>
-            <ul>
-                <li>
+            <ul class="service-box-container">
+                <li class="service-box-content">
                     <img src="../assets/img/사전좌석구매.png" alt="">
-                    <p>사전좌석</p>
+                    <p>사전 좌석 구매</p>
                 </li>
-                <li>
+                <li class="service-box-content">
                     <img src="../assets/img/사전수화물구매.png" alt="">
-                    <p>사전좌석</p>
+                    <p>사전 수화물 구매</p>
                 </li>
-                <li>
+                <li class="service-box-content">
                     <img src="../assets/img/기내식주문.png" alt="">
-                    <p>사전좌석</p>
+                    <p>기내식 주문사전좌석</p>
                 </li>
-                <li>
+                <li class="service-box-content">
                     <img src="../assets/img/기내면세품.png" alt="">
-                    <p>사전좌석</p>
+                    <p>기내 면세품</p>
                 </li>
-                <li>
+                <li class="service-box-content">
                     <img src="../assets/img/카페민트.png" alt="">
-                    <p>사전좌석</p>
+                    <p>CAFE MINT</p>
                 </li>
-                <li>
+                <li class="service-box-content">
                     <img src="../assets/img/여행자보험.png" alt="">
-                    <p>사전좌석</p>
+                    <p>여행자 보험</p>
                 </li>
             </ul>
         </div>
