@@ -92,6 +92,10 @@ button{
     transform: translateX(300px);
 }
 
+.header-nav > a {
+    color: #fff;
+}
+
 
 /* 메인예약박스 */
 #reservation-container {
@@ -353,20 +357,314 @@ button{
 #service-container {
     width: 1280px;
     margin: 0 auto;
+    padding: 96px 0;
+}
+
+.service-box {
+    font-size: 24px;
+    text-align: center;
 }
 
 .service-box-container {
     display: flex;
     /* gap: 43px; */
     justify-content: space-between;
+    margin-top: 48px;
 }
 
 .service-box-content {
     text-align: center;
+    width: 150px;
+    height: 122px;
+
+    padding: 39px 0;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0px 0px 17px rgb(0, 0, 0, 0.1) ;
+}
+
+.service-img {
+    width: auto;
+    width: 70px;
 }
 
 .service-box-content > p {
     font-size: 16px;
-    margin-top: 34px;
+}
+
+
+
+
+
+/* 민트패스 */
+
+#mintpass-section {
+    background-color: #f5f5f5;
+}
+
+.mintpass-container {
+    margin: 0 auto;
+    width: 1280px;
+    padding: 96px 0;
+}
+
+.mint-title {
+    text-align: center;
+}
+
+.mint-title > h2 {
+    font-size: 48px;
+    color: #24C6A9;
+}
+
+.mint-title > p:nth-child(2) {
+    font-size: 22px;
+    color: #444;
+
+    margin-top: 16px;
+}
+
+.mint-title > p:last-child {
+    font-size: 16px;
+    color: #777;
+    
+    margin-top: 8px;
+}
+
+.mintpass-box {
+    margin: 84px 0 0 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.mint-content{
+    height: 354px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 17px rgb(0, 0, 0, 0.1);
+    
+    background-color: #fff;
+}
+
+.mint-text {
+    margin: 0 12px;
+}
+
+.mint-text > p:first-child {
+    font-size: 22px;
+    color: #444;
+
+    margin-top: 12px;
+}
+
+.mint-text > p:last-child {
+    font-size: 16px;
+    color: #777;
+
+    margin-top: 8px;
+}
+
+
+
+
+
+/* 공지사항,sns,고객센터 등 */
+
+.top-etc {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 공지사항 */
+.etc-container {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 96px 0;
+}
+
+.notice-container {
+    width: 891px;
+}
+
+.notice-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notice-title > p {
+    font-size: 20px;
+}
+
+.notice-box {
+    padding: 32px;
+    background-color: #fff;
+    box-shadow: 0px 0px 17px rgb(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+    height: 81px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-top: 16px;
+}
+
+.notice-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.notice-content > p:first-child {
+    color: #444;
+}
+
+.notice-content > p:last-child {
+    color: #777;
+}
+
+
+/* SNS */
+.sns-container {
+    width: 277px;
+    height: 145px;
+}
+
+.sns-container > p {
+    font-size: 20px;
+}
+
+.sns-box {
+    display: flex;
+    gap: 28px;
+    margin-top: 20px;
+
+    padding: 32px;
+    background-color: #fff;
+    box-shadow: 0px 0px 17px rgb(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.facebook {
+    width: 91px;
+    height: 81px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.facebook p {
+    font-size: 18px;
+    color: #666;
+}
+
+.instagram {
+    width: 91px;
+    height: 81px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.instagram p {
+    font-size: 18px;
+    color: #666;
+}
+
+
+/* 고객센터 */
+.bottom-etc-container {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 48px;
+
+    padding: 32px;
+    background-color: #fff;
+    box-shadow: 0px 0px 17px rgb(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.customer-box {
+    width: 584px;
+    height: 107px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.customer-title > p:first-child {
+    font-size: 20px;
+}
+
+.customer-title > p:last-child {
+    font-size: 16px;
+    color: #777;
+    margin-top: 4px;
+}
+
+.customer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.customer-content > .number {
+    font-size: 18px;
+    color: #24C6A9;
+}
+
+.customer-btn {
+    display: flex;
+
+    gap: 24px;
+}
+
+.customer-btn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #49D1B9;
+    color: #fff;
+    gap: 4px;
+    border-radius: 5px;
+    padding: 4px 18px;
+}
+
+.promotion-box {
+    width: 584px;
+    height: 107px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.promotion-title > p:first-child {
+    font-size: 20px;
+}
+
+.promotion-title > p:last-child {
+    font-size: 16px;
+    color: #24C6A9;
+    margin-top: 4px;
+}
+
+.promotion-box > p:last-child {
+    font-size: 16px;
+    color: #777;
 }
 
