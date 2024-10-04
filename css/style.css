@@ -1,8 +1,13 @@
-*{
-    font-family: 'Pretendard';
+
+@font-face {
+    font-family: 'Pretendard-Regular';
     src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
+}
+
+body{
+    font-family: 'Pretendard-Regular';
 }
 
 a {
@@ -86,6 +91,7 @@ button{
     display: flex;
 
     font-size: 18px;
+    font-weight: 500;
     color: #fff;
 
     gap: 64px;
@@ -116,12 +122,14 @@ button{
     align-items: center;
 
     font-size: 16px;
+    font-weight: 500;
     color: #fff;
     background-color: #24C6A9;
 }
 
 .res-button:first-child {
-    color: #222;
+    color: #444;
+    font-weight: 600;
     background-color: #fff;
 
     border-radius: 10px 10px 0 0 ;
@@ -165,10 +173,12 @@ button{
  
 .round-trip {
     color: #EE378A;
+    font-weight: 700;
 }
 
 .one-way {
     color: #777;
+    font-weight: 700; 
 }
 
 
@@ -195,10 +205,14 @@ button{
 
 .middle-country-goback > h2 {
     font-size: 48px;
+    font-weight: 700;
+    color: #222;
 }
 
 .middle-country-name {
     font-size: 18px;
+    font-weight: 600;
+    color: #222;
 }
 
 .middle-date {
@@ -216,6 +230,12 @@ button{
     margin-top: 4px;
 }
 
+.middle-date-goback > p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #222;
+}
+
 .middle-date-gap {
     display: flex;
     align-items: center;
@@ -223,6 +243,7 @@ button{
 }
 
 .middle-date-gap > p {
+    font-size: 16px;
     color: #777;
 }
 
@@ -238,7 +259,6 @@ button{
 .passenger-container {
     display: flex;
     gap: 32px;
-    font-size: 16px;
 }
 
 .passenger {
@@ -246,6 +266,8 @@ button{
     align-items: center;
     gap: 4px;
 
+    font-size: 16px;
+    font-weight: 500;
     color: #777;
 }
 
@@ -253,6 +275,10 @@ button{
     display: flex;
     align-items: center;
     gap: 12px;
+
+    font-size: 16px;
+    font-weight: 500;
+    color: #222;
 }
 
 .check-button {
@@ -261,6 +287,10 @@ button{
     border-radius: 20px;
 
     background-color: #24c6a9;
+}
+
+.check-button > a {
+    font-size: 16px;
     color: #fff;
 }
 
@@ -291,10 +321,13 @@ button{
     align-items: end;
 
     gap: 8px;
+    font-weight: 700;
+
 }
 
 .spacial-price-title > p:first-child {
     font-size: 16px;
+    color: #222;
 }
 
 .spacial-price-title > p:last-child {
@@ -317,6 +350,7 @@ button{
 
     gap: 4px;
     margin-top: 4px;
+    font-weight: 700;
 }
 
 .spacial-price-price > p:first-child {
@@ -362,6 +396,8 @@ button{
 
 .service-box {
     font-size: 24px;
+    font-weight: 700;
+    color: #222;
     text-align: center;
 }
 
@@ -388,13 +424,15 @@ button{
     box-shadow: 0px 0px 17px rgb(0, 0, 0, 0.1) ;
 }
 
+.service-box-content > p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+}
+
 .service-img {
     width: auto;
     width: 70px;
-}
-
-.service-box-content > p {
-    font-size: 16px;
 }
 
 
@@ -419,11 +457,13 @@ button{
 
 .mint-title > h2 {
     font-size: 48px;
+    font-weight: 700;
     color: #24C6A9;
 }
 
 .mint-title > p:nth-child(2) {
     font-size: 22px;
+    font-weight: 600;
     color: #444;
 
     margin-top: 16px;
@@ -431,6 +471,7 @@ button{
 
 .mint-title > p:last-child {
     font-size: 16px;
+    font-weight: 500;
     color: #777;
     
     margin-top: 8px;
@@ -457,6 +498,7 @@ button{
 
 .mint-text > p:first-child {
     font-size: 22px;
+    font-weight: 700;
     color: #444;
 
     margin-top: 12px;
@@ -464,6 +506,7 @@ button{
 
 .mint-text > p:last-child {
     font-size: 16px;
+    font-weight: 500;
     color: #777;
 
     margin-top: 8px;
@@ -498,6 +541,8 @@ button{
 
 .notice-title > p {
     font-size: 20px;
+    font-weight: 700;
+    color: #222;
 }
 
 .notice-box {
@@ -521,10 +566,13 @@ button{
 }
 
 .notice-content > p:first-child {
+    font-size: 16px;
+    font-weight: 500;
     color: #444;
 }
 
 .notice-content > p:last-child {
+    font-size: 16px;
     color: #777;
 }
 
@@ -537,6 +585,8 @@ button{
 
 .sns-container > p {
     font-size: 20px;
+    font-weight: 700;
+    color: #222;
 }
 
 .sns-box {
@@ -565,6 +615,7 @@ button{
 
 .facebook p {
     font-size: 18px;
+    font-weight: 700;
     color: #666;
 }
 
@@ -580,6 +631,7 @@ button{
 
 .instagram p {
     font-size: 18px;
+    font-weight: 700;
     color: #666;
 }
 
@@ -608,6 +660,8 @@ button{
 
 .customer-title > p:first-child {
     font-size: 20px;
+    font-weight: 700;
+    color: #222;
 }
 
 .customer-title > p:last-child {
@@ -623,6 +677,7 @@ button{
 
 .customer-content > .number {
     font-size: 18px;
+    font-weight: 700;
     color: #24C6A9;
 }
 
@@ -639,9 +694,14 @@ button{
 
     background-color: #49D1B9;
     color: #fff;
+    font-weight: 500;
     gap: 4px;
     border-radius: 5px;
     padding: 4px 18px;
+}
+
+.customer-btn p {
+    padding: 0 0 2px 0;
 }
 
 .promotion-box {
@@ -655,10 +715,13 @@ button{
 
 .promotion-title > p:first-child {
     font-size: 20px;
+    font-weight: 700;
+    color: #222;
 }
 
 .promotion-title > p:last-child {
     font-size: 16px;
+    font-weight: 500;
     color: #24C6A9;
     margin-top: 4px;
 }
@@ -668,3 +731,83 @@ button{
     color: #777;
 }
 
+
+/* 하단메뉴 */
+#bottom-section {
+    background-color: #f5f5f5;
+}
+
+.bottom-menu {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 48px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.menu-container {
+    display: flex;
+
+    gap: 128px;
+}
+
+.company > p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+}
+
+.company ul {
+    margin-top: 12px;
+}
+
+.company li {
+    margin-top: 4px;
+}
+
+.company a {
+    font-size: 14px;
+    color: #777;
+}
+
+.group-shortcut {
+    display: flex;
+    font-size: 16px;
+    color: #777;
+    align-items: center;
+}
+
+.group-shortcut > img {
+    width: 24px;
+    height: 24px;
+}
+
+
+
+
+/* footer */
+.footer-container {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 36px 0;
+}
+
+.footer-icon-box {
+    display: flex;
+    justify-content: right;
+
+    gap: 20px;
+}
+
+.footer-content-text {
+    font-size: 12px;
+    color: #777;
+
+    margin-top: 10px;
+}
+
+.footer-content-text p {
+    margin-top: 6px;
+}
